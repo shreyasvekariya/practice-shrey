@@ -32,3 +32,31 @@ const myFunction = function(){
 }
 
 console.log( typeof myFunction);
+
+
+
+// ***********************************Memory
+
+//  stak (premitive) , Heap (Non-premitive)
+
+let myName = "shrey"
+
+let anotherName = myName
+anotherName = "shreyas"
+
+console.log(anotherName);
+console.log(myName);
+
+let userOne = {
+    email: "sh@gamil.com",
+    upi: "user2ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "shreya@gamail.com"
+
+console.log(userOne);
+console.log(userTwo);
+
+
