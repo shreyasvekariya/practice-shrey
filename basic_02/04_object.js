@@ -29,7 +29,7 @@ const obj4 = {5:"a", 6:"b"}
 // console.log(obj1);
 
 const obj3 = {...obj1, ...obj2,...obj4}
-console.log(obj3);
+// console.log(obj3);
 
 
 const users = [
@@ -53,10 +53,39 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedin'));
+// console.log(tinderUser.hasOwnProperty('isLoggedin'));
+
+
+const course = {
+    courseName: "shrey study",
+    price : "999",
+    courseInstroctor : "shreya",
+    
+}
+
+// console.log(course.courseInstroctor)
+
+const {courseInstroctor : instructor} = course
+
+// console.log(courseInstroctor);
+console.log(instructor);  // object destruvturing
+
+// API***********value comes in jason
+
+{
+    "name" : "shreyas",
+    "coursename" : "shrey study",
+    "price" : "free"
+}
+
+[
+    {},
+    {},
+    {},
+]
